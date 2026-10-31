@@ -1,0 +1,11 @@
+pandas>=2.2
+google-cloud-bigquery
+google-genai
+python-dotenv
+fastapi
+uvicorn[standard]
+pydantic>=2
+sqlglot==30.18.0
+pypdf
+numpy
+langgraph>=1.0,<2.0

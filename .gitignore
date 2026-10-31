@@ -1,0 +1,50 @@
+# Python cache and test artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*service-account*.json
+*credentials*.json
+application_default_credentials.json
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local and generated data
+data/database.sqlite
+data/*.sqlite
+data/processed/
+data/rag_index/
+
+# Keep only the public synthetic sample
+data/raw/*
+!data/raw/focus_cloud_billing_sample_1000.csv
+
+# Downloaded public documents stay local
+data/rag_documents/*.pdf
+!data/rag_documents/README.md
+
+# Generated reports and experiments
+reports/
+docs/reports/
+experiments/
+*.log
+*.zip
+
+# Temporary project notes
+/RUN_CLOUD_PIPELINE_CHANGES.md
